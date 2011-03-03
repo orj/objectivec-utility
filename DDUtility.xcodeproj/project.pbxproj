@@ -3,16 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A70305AA131E42E70091DE5B /* NSDictionary+DDUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = A70305A8131E42E70091DE5B /* NSDictionary+DDUtility.h */; };
+		A70305AB131E42E70091DE5B /* NSDictionary+DDUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A70305A9131E42E70091DE5B /* NSDictionary+DDUtility.m */; };
+		A70305C4131E43C10091DE5B /* NSMutableDictionary+DDUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = A70305C0131E43C10091DE5B /* NSMutableDictionary+DDUtility.h */; };
+		A70305C5131E43C10091DE5B /* NSMutableDictionary+DDUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A70305C1131E43C10091DE5B /* NSMutableDictionary+DDUtility.m */; };
+		A70305CC131E482D0091DE5B /* DDKeychainUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A70305CA131E482D0091DE5B /* DDKeychainUtils.h */; };
+		A70305CD131E482D0091DE5B /* DDKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A70305CB131E482D0091DE5B /* DDKeychainUtils.m */; };
+		A70305D0131E49D50091DE5B /* UIAlertView+DDUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = A70305CE131E49D50091DE5B /* UIAlertView+DDUtility.h */; };
+		A70305D1131E49D50091DE5B /* UIAlertView+DDUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A70305CF131E49D50091DE5B /* UIAlertView+DDUtility.m */; };
+		A7896B6A131E3D7B00CAB0EC /* DDDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = A7896B68131E3D7B00CAB0EC /* DDDebug.h */; };
+		A7896B6B131E3D7B00CAB0EC /* DDDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = A7896B69131E3D7B00CAB0EC /* DDDebug.m */; };
 		A79BF34A125C8D81008478DF /* DDUtility_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A79BF349125C8D81008478DF /* DDUtility_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A79BF349125C8D81008478DF /* DDUtility_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDUtility_Prefix.pch; path = src/DDUtility_Prefix.pch; sourceTree = "<group>"; };
+		A70305A8131E42E70091DE5B /* NSDictionary+DDUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DDUtility.h"; sourceTree = "<group>"; };
+		A70305A9131E42E70091DE5B /* NSDictionary+DDUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DDUtility.m"; sourceTree = "<group>"; };
+		A70305C0131E43C10091DE5B /* NSMutableDictionary+DDUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+DDUtility.h"; sourceTree = "<group>"; };
+		A70305C1131E43C10091DE5B /* NSMutableDictionary+DDUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+DDUtility.m"; sourceTree = "<group>"; };
+		A70305CA131E482D0091DE5B /* DDKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDKeychainUtils.h; sourceTree = "<group>"; };
+		A70305CB131E482D0091DE5B /* DDKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDKeychainUtils.m; sourceTree = "<group>"; };
+		A70305CE131E49D50091DE5B /* UIAlertView+DDUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+DDUtility.h"; sourceTree = "<group>"; };
+		A70305CF131E49D50091DE5B /* UIAlertView+DDUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+DDUtility.m"; sourceTree = "<group>"; };
+		A7896B68131E3D7B00CAB0EC /* DDDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDebug.h; sourceTree = "<group>"; };
+		A7896B69131E3D7B00CAB0EC /* DDDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDebug.m; sourceTree = "<group>"; };
+		A79BF349125C8D81008478DF /* DDUtility_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDUtility_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libDDUtility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDDUtility.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -59,6 +79,9 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A7896B4D131E2E0B00CAB0EC /* Foundation */,
+				A70305C9131E47FE0091DE5B /* Security */,
+				A70305C8131E46C00091DE5B /* UIKit */,
 			);
 			name = Classes;
 			path = src;
@@ -70,6 +93,38 @@
 				A79BF349125C8D81008478DF /* DDUtility_Prefix.pch */,
 			);
 			name = "Other Sources";
+			path = src;
+			sourceTree = "<group>";
+		};
+		A70305C8131E46C00091DE5B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A70305CE131E49D50091DE5B /* UIAlertView+DDUtility.h */,
+				A70305CF131E49D50091DE5B /* UIAlertView+DDUtility.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A70305C9131E47FE0091DE5B /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				A70305CA131E482D0091DE5B /* DDKeychainUtils.h */,
+				A70305CB131E482D0091DE5B /* DDKeychainUtils.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		A7896B4D131E2E0B00CAB0EC /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				A7896B68131E3D7B00CAB0EC /* DDDebug.h */,
+				A7896B69131E3D7B00CAB0EC /* DDDebug.m */,
+				A70305A8131E42E70091DE5B /* NSDictionary+DDUtility.h */,
+				A70305A9131E42E70091DE5B /* NSDictionary+DDUtility.m */,
+				A70305C0131E43C10091DE5B /* NSMutableDictionary+DDUtility.h */,
+				A70305C1131E43C10091DE5B /* NSMutableDictionary+DDUtility.m */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +135,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A79BF34A125C8D81008478DF /* DDUtility_Prefix.pch in Headers */,
+				A7896B6A131E3D7B00CAB0EC /* DDDebug.h in Headers */,
+				A70305AA131E42E70091DE5B /* NSDictionary+DDUtility.h in Headers */,
+				A70305C4131E43C10091DE5B /* NSMutableDictionary+DDUtility.h in Headers */,
+				A70305CC131E482D0091DE5B /* DDKeychainUtils.h in Headers */,
+				A70305D0131E49D50091DE5B /* UIAlertView+DDUtility.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +169,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "DDUtility" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -133,6 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7896B6B131E3D7B00CAB0EC /* DDDebug.m in Sources */,
+				A70305AB131E42E70091DE5B /* NSDictionary+DDUtility.m in Sources */,
+				A70305C5131E43C10091DE5B /* NSMutableDictionary+DDUtility.m in Sources */,
+				A70305CD131E482D0091DE5B /* DDKeychainUtils.m in Sources */,
+				A70305D1131E49D50091DE5B /* UIAlertView+DDUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +215,6 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DDUtility_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = DDUtility;
 			};
@@ -164,8 +227,6 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/DDUtility.dst;
 				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DDUtility_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = DDUtility;
 			};
@@ -177,11 +238,14 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = src/DDUtility_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -190,11 +254,14 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = src/DDUtility_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

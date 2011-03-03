@@ -2,23 +2,37 @@
 //  NSDictionary+Helper.m
 //  GSPA
 //
-//  Created by Oliver Jones on 27/10/10.
-//  Copyright 2010 Deeper Design. All rights reserved.
+//  Created by Oliver Jones on 2/02/11.
+//  Copyright 2011 Deeper Design. All rights reserved.
 //
 
-#import "NSDictionary+Helper.h"
+#import "NSDictionary+DDUtility.h"
 
 
-@implementation NSDictionary (Helper)
+@implementation NSDictionary (DDUtility)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-- (NSString*) stringForKey:(id)aKey
+- (NSString*) stringForKey: (id) aKey
 {
-    id o = [self objectForKey:aKey];
+    id o = [self objectForKey: aKey];
 
     NSAssert([o isKindOfClass: [NSString class]], @"Not a string!");
     
     return (NSString*) o;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+- (id) objectForUIntegerKey: (NSUInteger) aKey
+{
+    NSNumber* number = [NSNumber numberWithUnsignedInteger: aKey];
+    return [self objectForKey: number];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+- (id) objectForIntegerKey: (NSInteger) aKey
+{
+    NSNumber* number = [NSNumber numberWithInteger: aKey];
+    return [self objectForKey: number];
 }
 
 @end

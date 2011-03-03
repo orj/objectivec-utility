@@ -1,15 +1,15 @@
 //
-//  NSMutableDictionary+Helper.h
-//  GSPA
+//  NSMutableDictionary+DDUtility.h
+//  DDUtility
 //
-//  Created by Oliver Jones on 28/10/10.
-//  Copyright 2010 Deeper Design. All rights reserved.
+//  Created by Oliver Jones on 2/02/11.
+//  Copyright 2011 Deeper Design. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 
-@interface NSMutableDictionary (Helper)
+@interface NSMutableDictionary (DDUtility)
 
 /*!
  @abstract      Returns a copy of the dictionary as a read-only NSDictionary.  
@@ -17,5 +17,18 @@
  @result        A read-only copy of the dictionary.
  */
 - (NSDictionary*) readonlyCopy;
+
+/*!
+ @abstract      Adds a given key-value pair to the dictionary.
+ */
+- (void) setObject: (id) anObject 
+    forUIntegerKey: (NSUInteger) aKey;
+
+/*!
+ @abstract      Adds a given key-value pair to the dictionary.
+ */
+- (void) setObject: (id) anObject 
+     forIntegerKey: (NSInteger) aKey;
+
 
 @end

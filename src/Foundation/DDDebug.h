@@ -8,9 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define DDAssertNotNil(x) \
+    NSAssert1((x) != nil, @"%@ can not be nil", @#x)
 
-@interface DDDebug : NSObject {
-    
-}
-
-@end
+#define DDAssertNotNilOrEmptyString(x) \
+    NSAssert1((((x) != nil) && (![(x) isEqualToString: @""])), @"%@ can not be nil or empty", @#x) 

@@ -7,8 +7,3 @@
 //
 
 #import "DDDebug.h"
-
-
-@implementation DDDebug
-
-@end

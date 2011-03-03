@@ -1,20 +1,36 @@
 //
-//  NSMutableDictionary+Helper.m
-//  GSPA
+//  NSMutableDictionary+DDUtility.m
+//  DDUtility
 //
-//  Created by Oliver Jones on 28/10/10.
-//  Copyright 2010 Deeper Design. All rights reserved.
+//  Created by Oliver Jones on 2/02/11.
+//  Copyright 2011 Deeper Design. All rights reserved.
 //
 
-#import "NSMutableDictionary+Helper.h"
+#import "NSMutableDictionary+DDUtility.h"
 
 
-@implementation NSMutableDictionary (Helper)
+@implementation NSMutableDictionary (DDUtility)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-- (NSDictionary*) asDictionary
+- (NSDictionary*) readonlyCopy
 {
-    return [NSDictionary dictionaryWithDictionary: self];
+    return [[NSDictionary alloc] initWithDictionary: self];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+- (void) setObject: (id) anObject 
+    forUIntegerKey: (NSUInteger) aKey
+{
+    NSNumber* number = [NSNumber numberWithUnsignedInteger: aKey];
+    [self setObject: anObject forKey: number];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+- (void) setObject: (id) anObject 
+    forIntegerKey: (NSInteger) aKey
+{
+    NSNumber* number = [NSNumber numberWithInteger:aKey];
+    [self setObject: anObject forKey: number];
 }
 
 @end
