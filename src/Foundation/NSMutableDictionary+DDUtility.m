@@ -33,4 +33,12 @@
     [self setObject: anObject forKey: number];
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+- (void) setBoolean: (BOOL) aBool
+             forKey: (id) aKey
+{
+    NSNumber* number = [NSNumber numberWithBool: aBool];
+    [self setObject: number forKey: aKey];
+}
+
 @end

@@ -31,4 +31,10 @@
      forIntegerKey: (NSInteger) aKey;
 
 
+/*!
+ @abstract      Adds a given boolean value to the dictionary for the specified key.
+ */
+- (void) setBoolean: (BOOL) aBool
+             forKey: (id) aKey;
+
 @end
