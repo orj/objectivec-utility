@@ -22,7 +22,8 @@
 
 /*!
  @abstract      Constrain a value within an inclusive lower bound and an exclusive upper bound.
-                Ie, in interval notation: [minval, maxval)
+                Ie, in interval notation: [minval, maxval).  Values outside the range will cycle 
+                back around into the range.  Eg: given a minval 0, maxval 10 and val 15 will result in 5 being returned.
  */
 + (float) constrainFloatValue:(float)val 
                    betweenMin:(float)minval 

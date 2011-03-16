@@ -14,7 +14,7 @@
 + (float) clampFloatValue:(float)val 
                betweenMin:(float)minval 
                       max:(float)maxval
-{
+{  
     return MAX(MIN(val, maxval), minval);
 }
 
@@ -22,9 +22,13 @@
 + (float) constrainFloatValue:(float)val 
                    betweenMin:(float)minval 
                           max:(float)maxval
-{    
-    // FIXME: this is not correct.
-    return fmodf(val, maxval);
+{   
+    double x = val;
+    double lo = minval;
+    double hi = maxval;
+    
+    double t = (x-lo) / (hi-lo);
+    return (float) (lo + (hi-lo) * (t-floor(t)));
 }
 
 @end
