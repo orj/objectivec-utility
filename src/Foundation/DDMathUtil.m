@@ -6,7 +6,7 @@
 //  Copyright 2011 Deeper Design. All rights reserved.
 //
 
-#import "MathUtil.h"
+#import "DDMathUtil.h"
 
 @implementation MathUtil
 
