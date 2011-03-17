@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MathUtil : NSObject
+@interface DDMathUtil : NSObject
 {
 }
 

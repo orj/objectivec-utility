@@ -6,4 +6,5 @@
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
     #import <Security/Security.h>
+    #import <QuartzCore/QuartzCore.h>
 #endif
