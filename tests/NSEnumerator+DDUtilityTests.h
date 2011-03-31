@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GHUnitIOS/GHUnit.h"
 
-
-@interface NSEnumerator_DDUtilityTests : NSObject {
-    
+@interface NSEnumerator_DDUtilityTests : GHTestCase
+{  
 }
+
+
 
 @end
