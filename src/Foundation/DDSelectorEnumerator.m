@@ -17,7 +17,7 @@
     if ((self = [super init]))
     {
         m_enumerator = [e retain];
-        m_projection = [p copy];
+        m_selector = [p copy];
     }
     
     return self;
@@ -27,10 +27,10 @@
 - (void) dealloc
 {
     [m_enumerator release];
-    [m_projection release];
+    [m_selector release];
     
     m_enumerator = nil;
-    m_projection = nil;
+    m_selector = nil;
     
     [super dealloc];
 }
@@ -47,7 +47,7 @@
     NSMutableArray* t = [[NSMutableArray alloc] init];
     for (id o in m_enumerator)
     {
-        [t addObject: m_projection(o)];
+        [t addObject: m_selector(o)];
     }
     
     NSArray* result = [NSArray arrayWithArray: t];
@@ -60,9 +60,9 @@
 - (id)nextObject
 {
     id o = nil;
-    while((o = [m_enumerator nextObject]))
+    if ((o = [m_enumerator nextObject]))
     {
-        return m_projection(o);
+        return m_selector(o);
     }
     
     return nil;

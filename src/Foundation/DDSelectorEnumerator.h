@@ -10,11 +10,14 @@
 
 typedef id (^DDSelectorBlock)(id i);
 
+/*!
+ @abstract  An NSEnumerator subclass that iterates over a source sequence executing a selector block for each sequence member and returning the result of the selector as its own sequence item.
+ */
 @interface DDSelectorEnumerator : NSEnumerator 
 {
 @private
     NSEnumerator* m_enumerator;
-    DDSelectorBlock m_projection;
+    DDSelectorBlock m_selector;
 }
 
 - (id) initWithEnumerator:(NSEnumerator*)e selector: (DDSelectorBlock)p;

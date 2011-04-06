@@ -46,4 +46,29 @@
  */
 - (NSEnumerator*) select: (id (^)(id i)) selector;
 
+/*!
+ @abstract  Concatenates two sequences.
+ @param     enumerator  The sequence to concatenate to this sequence.
+ @result    A NSEnumerator that is the concatination of self and the specified enumerator.
+ */
+- (NSEnumerator*) concat: (NSEnumerator*) enumerator;
+
+/*!
+ @abstract  Returns the number of elements in a sequence.
+ @result    The number of elements in a sequence.
+*/
+- (NSInteger) count;
+
+/*!
+ @abstract  Returns the number of elements in the sequence that satisfy the specified predicate.
+ @param     predicate   A block to test each element for a condition.
+ @result    The number of elements in the sequence that satisfy the specified predicate. 
+ */
+- (NSInteger) count: (BOOL (^)(id i)) predicate;
+
+/*!
+ @abstract  Returns distinct elements from a sequence by using the default equality comparer to compare values.
+ */
+- (NSEnumerator*) distinct;
+
 @end

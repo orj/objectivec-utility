@@ -9,6 +9,8 @@
 #import "NSEnumerator+DDUtility.h"
 #import "DDPredicateEnumerator.h"
 #import "DDSelectorEnumerator.h"
+#import "DDConcatinateEnumerator.h"
+#import "DDDistinctEnumerator.h"
 
 @implementation NSEnumerator (DDUtility)
 
@@ -60,6 +62,44 @@
 {
     return [DDSelectorEnumerator enumeratorWithEnumerator: self 
                                                  selector: selector];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSEnumerator*) concat: (NSEnumerator*) enumerator
+{
+    return [DDConcatinateEnumerator enumeratorWithEnumerators:[NSArray arrayWithObjects: self, enumerator, nil]];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSInteger) count
+{
+    NSInteger count = 0;
+    for (id o in self)
+    {
+        ++count;
+    }
+    
+    return count;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSInteger) count: (BOOL (^)(id i)) predicate
+{
+    NSInteger count = 0;
+    for (id o in self) {
+        if (predicate(o))
+        {
+            ++count;
+        }
+    }
+    
+    return count;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSEnumerator*) distinct
+{
+    return [DDDistinctEnumerator enumeratorWithEnumerator: self];
 }
 
 @end
