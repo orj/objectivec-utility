@@ -12,9 +12,6 @@
 @interface DDCarouselImageView : UIView 
 {
 @private
-    CGFloat m_throwDuration;
-    CGFloat m_minimumThrowVelocity;
-    CGFloat m_throwVelocityFactor;
     CGPoint m_lastTranslation;
 }
 

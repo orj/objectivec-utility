@@ -23,7 +23,7 @@ static NSString* kRotationPropertyKey = @"rotation";
 @implementation DDCarouselImageLayer
 
 @synthesize rotation = m_rotation;
-@synthesize images = m_images;
+@synthesize images;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 - (void) setRotation:(CGFloat)rotation

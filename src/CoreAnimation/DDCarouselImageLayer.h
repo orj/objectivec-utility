@@ -14,7 +14,6 @@
 {
 @private
     float m_rotation;
-    NSArray* m_images;
 }
 
 /*!

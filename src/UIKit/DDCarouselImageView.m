@@ -25,9 +25,9 @@ static NSString* kThrowAnimationKey = @"DDCarouselImageView_throwAnimation";
 
 @implementation DDCarouselImageView
 
-@synthesize throwDuration = m_throwDuration;
-@synthesize throwVelocityFactor = m_throwVelocityFactor;
-@synthesize minimumThrowVelocity = m_minimumThrowVelocity;
+@synthesize throwDuration;
+@synthesize throwVelocityFactor;
+@synthesize minimumThrowVelocity;
 
 #pragma mark -
 #pragma Class Methods
@@ -106,7 +106,7 @@ static NSString* kThrowAnimationKey = @"DDCarouselImageView_throwAnimation";
         CGPoint vel = [gesture velocityInView:self];
         if (fabs(vel.x) >= self.minimumThrowVelocity)
         {
-            [self spinWithVelocity:((-vel.x * m_throwVelocityFactor)/(180.0f/M_PI)) forDuration: 1.0f];
+            [self spinWithVelocity:((-vel.x * self.throwVelocityFactor)/(180.0f/M_PI)) forDuration: 1.0f];
         }
     }
 }
