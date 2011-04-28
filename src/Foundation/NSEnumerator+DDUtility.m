@@ -11,6 +11,7 @@
 #import "DDSelectorEnumerator.h"
 #import "DDConcatinateEnumerator.h"
 #import "DDDistinctEnumerator.h"
+#import "DDExceptEnumerator.h"
 
 @implementation NSEnumerator (DDUtility)
 
@@ -101,5 +102,13 @@
 {
     return [DDDistinctEnumerator enumeratorWithEnumerator: self];
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSEnumerator*) except:(NSEnumerator *)enumerator
+{
+    return [DDExceptEnumerator enumeratorWithEnumerator:self 
+                                                exclude:enumerator];
+}
+
 
 @end

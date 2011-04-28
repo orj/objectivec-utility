@@ -71,4 +71,10 @@
  */
 - (NSEnumerator*) distinct;
 
+/*!
+ @abstract  Produces the set difference of two sequences by using the default equality comparer to compare values.
+ @result    The set difference of two sequences by using the default equality comparer to compare values.
+ */
+- (NSEnumerator*) except:(NSEnumerator*)enumerator;
+
 @end

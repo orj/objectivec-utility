@@ -43,6 +43,12 @@
 		A79D54C21331D60700AD56B6 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A79D54C01331D5F500AD56B6 /* NSTimer+Blocks.m */; };
 		A7AFD4D9132E287900C10B03 /* DDMathUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A7AFD4D7132E287900C10B03 /* DDMathUtil.h */; };
 		A7AFD4DA132E287900C10B03 /* DDMathUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AFD4D8132E287900C10B03 /* DDMathUtil.m */; };
+		A7DCD610134CB2AE00E41D1F /* DDConcatinateEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = A7DCD60E134CB2AE00E41D1F /* DDConcatinateEnumerator.h */; };
+		A7DCD611134CB2AE00E41D1F /* DDConcatinateEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DCD60F134CB2AE00E41D1F /* DDConcatinateEnumerator.m */; };
+		A7DCD615134CBB9200E41D1F /* DDDistinctEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = A7DCD613134CBB9200E41D1F /* DDDistinctEnumerator.h */; };
+		A7DCD616134CBB9200E41D1F /* DDDistinctEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DCD614134CBB9200E41D1F /* DDDistinctEnumerator.m */; };
+		A7DCD619134CC40700E41D1F /* DDExceptEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = A7DCD617134CC40700E41D1F /* DDExceptEnumerator.h */; };
+		A7DCD61A134CC40700E41D1F /* DDExceptEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DCD618134CC40700E41D1F /* DDExceptEnumerator.m */; };
 		A7F26EAF133B5170009CD686 /* NSEnumerator+DDUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F26EAD133B5170009CD686 /* NSEnumerator+DDUtility.h */; };
 		A7F26EB0133B5170009CD686 /* NSEnumerator+DDUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F26EAE133B5170009CD686 /* NSEnumerator+DDUtility.m */; };
 		A7F26EB4133B5216009CD686 /* NSEnumerator+DDUtilityTests.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F26EB2133B5216009CD686 /* NSEnumerator+DDUtilityTests.h */; };
@@ -103,6 +109,12 @@
 		A7AFD4E6132E38C000C10B03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A7AFD4EF132E38C000C10B03 /* DDMathUtilTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DDMathUtilTests.h; path = ../tests/DDMathUtilTests.h; sourceTree = "<group>"; };
 		A7AFD4F1132E38C000C10B03 /* DDMathUtilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DDMathUtilTests.m; path = ../tests/DDMathUtilTests.m; sourceTree = "<group>"; };
+		A7DCD60E134CB2AE00E41D1F /* DDConcatinateEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDConcatinateEnumerator.h; sourceTree = "<group>"; };
+		A7DCD60F134CB2AE00E41D1F /* DDConcatinateEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDConcatinateEnumerator.m; sourceTree = "<group>"; };
+		A7DCD613134CBB9200E41D1F /* DDDistinctEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDistinctEnumerator.h; sourceTree = "<group>"; };
+		A7DCD614134CBB9200E41D1F /* DDDistinctEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDistinctEnumerator.m; sourceTree = "<group>"; };
+		A7DCD617134CC40700E41D1F /* DDExceptEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDExceptEnumerator.h; sourceTree = "<group>"; };
+		A7DCD618134CC40700E41D1F /* DDExceptEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDExceptEnumerator.m; sourceTree = "<group>"; };
 		A7F26EAD133B5170009CD686 /* NSEnumerator+DDUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+DDUtility.h"; sourceTree = "<group>"; };
 		A7F26EAE133B5170009CD686 /* NSEnumerator+DDUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEnumerator+DDUtility.m"; sourceTree = "<group>"; };
 		A7F26EB2133B5216009CD686 /* NSEnumerator+DDUtilityTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+DDUtilityTests.h"; sourceTree = "<group>"; };
@@ -243,6 +255,12 @@
 				A7F26EB7133B623B009CD686 /* DDPredicateEnumerator.m */,
 				A7F26EBA133B66F6009CD686 /* DDSelectorEnumerator.h */,
 				A7F26EBB133B66F6009CD686 /* DDSelectorEnumerator.m */,
+				A7DCD60E134CB2AE00E41D1F /* DDConcatinateEnumerator.h */,
+				A7DCD60F134CB2AE00E41D1F /* DDConcatinateEnumerator.m */,
+				A7DCD613134CBB9200E41D1F /* DDDistinctEnumerator.h */,
+				A7DCD614134CBB9200E41D1F /* DDDistinctEnumerator.m */,
+				A7DCD617134CC40700E41D1F /* DDExceptEnumerator.h */,
+				A7DCD618134CC40700E41D1F /* DDExceptEnumerator.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -296,6 +314,9 @@
 				A7F26EBC133B66F6009CD686 /* DDSelectorEnumerator.h in Headers */,
 				A72A388E1343F94400CC7DE8 /* DDCarouselImageView.h in Headers */,
 				A72A38971344030C00CC7DE8 /* DDCarouselImageLayer.h in Headers */,
+				A7DCD610134CB2AE00E41D1F /* DDConcatinateEnumerator.h in Headers */,
+				A7DCD615134CBB9200E41D1F /* DDDistinctEnumerator.h in Headers */,
+				A7DCD619134CC40700E41D1F /* DDExceptEnumerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +429,9 @@
 				A7F26EBD133B66F6009CD686 /* DDSelectorEnumerator.m in Sources */,
 				A72A388F1343F94400CC7DE8 /* DDCarouselImageView.m in Sources */,
 				A72A38981344030C00CC7DE8 /* DDCarouselImageLayer.m in Sources */,
+				A7DCD611134CB2AE00E41D1F /* DDConcatinateEnumerator.m in Sources */,
+				A7DCD616134CBB9200E41D1F /* DDDistinctEnumerator.m in Sources */,
+				A7DCD61A134CC40700E41D1F /* DDExceptEnumerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

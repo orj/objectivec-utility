@@ -14,7 +14,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////
 - (id) initWithEnumerator:(NSEnumerator*)e
 {
-    m_seen = [[NSMutableSet alloc] init];
+    m_seen = [[[NSMutableSet alloc] init] autorelease];
     DDPredicateBlock p = ^ BOOL (id o) 
     {
         if ([m_seen containsObject:o])        
@@ -24,10 +24,14 @@
         
         [m_seen addObject: o];        
         return true;
-
     };
 
-    return [super initWithEnumerator:e predicate:p];
+    if ((self = [super initWithEnumerator:e predicate:p]))
+    {        
+        [m_seen retain];
+    }
+    
+    return self;
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
